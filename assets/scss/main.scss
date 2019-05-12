@@ -1,0 +1,227 @@
+@import 'extra_small_devices';
+@import 'small_devices';
+@import 'medium_devices';
+@import 'large_devices';
+
+body {
+    padding: 0;
+    margin: 0;
+
+    #data {
+        width: 50%;
+        height: 50%;
+    }
+
+    .graphic_size {
+        width: 100%;
+    }
+
+    .loader {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        z-index: 99999;
+        border-radius: 50%;
+        top: calc(50% - 75px);
+        left: calc(50% - 75px);
+        opacity: 1;
+        transition: opacity 0.5s;
+
+        img {
+            position: absolute;
+            width: 90%;
+            right: 8px;
+            bottom: 8px;
+        }
+
+        p{
+            position: absolute;
+            bottom: 48px;
+            right: 23px;        
+        }
+    }
+}
+
+#mapid {
+    height: 100vh;
+}
+
+#country {
+    opacity: 0;
+    transition: opacity 0.5s;
+    height: 45px;
+}
+
+.logo {
+    position: absolute;
+    z-index: 999;
+    height: 90px;
+    top: 5px;
+}
+
+.leaflet-control-attribution {
+    display: none;
+}
+
+.leaflet-control-zoom {
+    position: fixed !important;
+    right: 15px !important;
+}
+
+.leaflet-control-zoom-in {
+    border-bottom: 1px solid #021456 !important;
+    background-color: #5267AF !important;
+    color: white !important;
+}
+
+.leaflet-control-zoom-out {
+    background-color: #5267AF !important;
+    color: white !important;
+}
+
+#country {
+    position: absolute;
+    z-index: 9999;
+}
+
+// style pictogramme,fenetre d'information
+.picto {
+    position: absolute;
+    z-index: 999;
+    height: 75px;
+    bottom: 15px;
+    margin-left: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+
+
+}
+
+#window {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    height: 96vh;
+    width: 80%;
+    top: 2vh;
+    left: 10%;
+    z-index: 9999;
+    display: none;
+}
+
+.croix {
+    color: rgb(82, 103, 175);
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 9999;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.logo {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// style des graphiques
+
+.graphique {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 9999;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+//style page 404//
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#notfound {
+    position: relative;
+    height: 100vh;
+}
+
+#notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.notfound {
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+}
+
+.notfound .notfound-404 {
+    height: 280px;
+    position: relative;
+    z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 230px;
+    margin: 0px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: url('./img/bg.jpg') no-repeat;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.notfound h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.notfound p {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.notfound a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #0046d5;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 4px 15px -5px #0046d5;
+    box-shadow: 0px 4px 15px -5px #0046d5;
+}

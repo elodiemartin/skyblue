@@ -1,0 +1,17 @@
+@media (max-width: 575px) { 
+    body {
+        #country {
+            width: 80% !important;
+            top: 100px;
+        }
+        #window {
+            height: 50vh;
+            top: 32vh;
+            width: 90%;
+            left: 5%;
+        }
+        .picto{
+            display: none !important;
+        }
+    }
+ }
